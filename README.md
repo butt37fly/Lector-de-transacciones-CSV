@@ -13,4 +13,4 @@ Esta práctica consiste en crear un programa que tenga la capacidad de leer los 
 
 Para la implementación de estilos, se utilizó la metodología BEM CSS.
 
-![[Screenshot.png]]
+![Previsualización del proyecto](https://raw.githubusercontent.com/butt37fly/Lector-de-transacciones-CSV/main/Screenshot.png)
