@@ -1,0 +1,103 @@
+/* General */
+
+:root {
+  --size-l: 24px;
+  --size-m: 16px;
+  --size-s: 8px;
+  --color-purple: #06001c;
+  --color-purple-1: #0E052C;
+  --color-purple-2: #1C1142;
+  --color-purple-3: #2C2545;
+  --color-green: #42bf42;
+  --color-red: #ed3d3d;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--color-purple);
+}
+
+body {
+  align-content: center;
+  margin: auto;
+  min-height: 100vh;
+  padding: var(--size-l);
+  width: min(100%, 768px);
+}
+
+/* Objetos */
+
+.o-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.o-table {
+  border-collapse: collapse;
+}
+
+.o-table__section--body {
+  & .o-table__row {
+    background-color: var(--color-purple-1);
+
+    &:nth-child(even) {
+      background-color: var(--color-purple-2);
+    }
+  }
+}
+
+.o-table__row {
+  background-color: var(--color-purple);
+}
+
+.o-table__heading,
+.o-table__value {
+  border: 1px solid var(--color-purple-3);
+  min-width: 150px;
+  padding: var(--size-s);
+}
+
+.o-table__heading {
+  text-align: start;
+}
+
+.o-table__value--positive {
+  color: var(--color-green);
+}
+
+.o-table__value--negative {
+  color: var(--color-red);
+}
+
+.o-table__value--reverse {
+  text-align: end;
+}
+
+/* Bloques */
+
+.b-header {
+  border-bottom: 1px solid var(--color-purple-3);
+  padding: var(--size-m);
+  width: 100%;
+}
+
+.b-content {
+  min-height: 500px;
+  padding: var(--size-m);
+  width: 100%;
+}
+
+.b-footer {
+  border-top: 1px solid var(--color-purple-3);
+  padding: var(--size-m);
+  width: 100%;
+}
